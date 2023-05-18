@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.notification{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+
+  width: 500px;
+  height: 50px
+}
+
+.parent{
+  /* min-height: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  background-color: #61dafb;
+  position: fixed;
+  width: 500px;
+  height: 100px;
+  left: 33%;
+  top:0%;
+}
+
+/* .box{
+  background-color: #61dafb;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  left: 45%;
+
+} */
