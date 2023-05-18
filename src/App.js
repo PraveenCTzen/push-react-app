@@ -8,7 +8,15 @@ function App() {
   // useEffect(()=>{
     
   // },[])
-  console.log('checking',Notification.permission,pushNotification)
+
+  // console.log('checking',Notification.permission,pushNotification)
+  if (window.navigator.standalone) {
+    // fullscreen mode
+    if(pushNotification){
+      setPushNotification(false)
+    }
+
+}
   if(Notification.permission == "granted"){
     console.log('approved');
     if(!pushNotification){
