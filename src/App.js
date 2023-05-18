@@ -19,16 +19,14 @@ function App() {
 
 if (window.navigator.userAgent.indexOf('iPhone') != -1) {
   if (window.navigator.standalone == true) {
-      alert("Yes iPhone! Yes Full Screen!");
+      // alert("Yes iPhone! Yes Full Screen!");
+      console.log("Yes iPhone! Yes Full Screen!");
   } else {
       // alert("Not Full Screen!");
       if(!pushNotification){
         setPushNotification(true)
       }
-  };} else {
-      alert("Not iPhone!");
-      document.location.href = 'please-open-from-an-iphone.html';
-};
+  };} 
   if(Notification.permission == "granted"){
     console.log('approved');
     if(!pushNotification){
