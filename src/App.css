@@ -57,8 +57,22 @@
   height: 100px;
   left: 33%;
   top:0%;
+  
 }
-
+@media (100px <= width <= 700px) {
+  .parent{
+    font-size: 10px;
+    width: 250px;
+    height: 60px;
+    left: 18%;
+    top:0%;
+  }
+  .notification{
+    width: 250px;
+  height: 25px
+  }
+  
+}
 /* .box{
   background-color: #61dafb;
   position: fixed;
