@@ -12,16 +12,19 @@ function App() {
   // console.log('checking',Notification.permission,pushNotification)
 //   if (window.navigator.standalone) {
 //     // fullscreen mode
-//     if(pushNotification){
-//       setPushNotification(false)
-//     }
+    // if(pushNotification){
+    //   setPushNotification(false)
+    // }
 // }
 
 if (window.navigator.userAgent.indexOf('iPhone') != -1) {
   if (window.navigator.standalone == true) {
       alert("Yes iPhone! Yes Full Screen!");
   } else {
-      alert("Not Full Screen!");
+      // alert("Not Full Screen!");
+      if(!pushNotification){
+        setPushNotification(true)
+      }
   };} else {
       alert("Not iPhone!");
       document.location.href = 'please-open-from-an-iphone.html';
